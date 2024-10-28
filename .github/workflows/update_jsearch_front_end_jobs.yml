@@ -21,7 +21,7 @@ jobs:
           RAPIDAPI_KEY_JSEARCH: ${{ secrets.RAPIDAPI_KEY_JSEARCH }}
       - name: Add, Commit and Push New Jobs Data
         env:
-          GH_PAT: ${{ secrets.GH_AT }}
+          GH_AT: ${{ secrets.GH_AT }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
