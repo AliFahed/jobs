@@ -16,7 +16,7 @@ const options = {
 
 async function updateJobsData() {
   try {
-    // console.log("Headers:", options.headers);
+    console.log("Headers:", options.headers);
     const response = await fetch(url, options);
     const result = await response.json();
 
@@ -34,7 +34,9 @@ async function updateJobsData() {
       fs.writeFileSync(filePath, JSON.stringify(jobsData, null, 2));
       console.log("Jobs data updated successfully.");
       console.log(result);
+      return;
     }
+    console.log(result);
   } catch (error) {
     console.error("Error updating jobs data:", error);
   }

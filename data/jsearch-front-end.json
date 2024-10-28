@@ -1,5 +1,5 @@
 {
-  "date": "28/10/2024",
+  "date": "27/10/2024",
   "data": [
     {
       "job_id": "4JhYUqz8t4qyHy8IAAAAAA==",
@@ -655,9 +655,7 @@
         "experience_mentioned": "false",
         "experience_preferred": "false"
       },
-      "job_required_skills": [
-        "CSS HTML adobe UI developer UI UX DESIGNER"
-      ],
+      "job_required_skills": ["CSS HTML adobe UI developer UI UX DESIGNER"],
       "job_required_education": {
         "postgraduate_degree": false,
         "professional_certification": false,
