@@ -1,6 +1,8 @@
 name: Update Front End Jobs Data
 on:
   workflow_dispatch:
+  #schedule:
+  #  - cron: "0 0 * * *"
 jobs:
   update-data:
     runs-on: ubuntu-latest
@@ -15,17 +17,25 @@ jobs:
         run: |
           npm install
           npm install -g ts-node
-      - name: Run script to update Front-End Jobs Data
-        run: npx ts-node scripts/update-jsearch-front-end-jobs.ts
+      #- name: Run script to update Front-End Jobs Data
+      #  run: npx ts-node scripts/update-jsearch-front-end-jobs.ts
+      #  env:
+      #    RAPIDAPI_KEY_JSEARCH: ${{ secrets.RAPIDAPI_KEY_JSEARCH }}
+      - name: Run script to update Back-End Jobs Data
+        run: npx ts-node scripts/update-jsearch-back-end-jobs.ts
         env:
           RAPIDAPI_KEY_JSEARCH: ${{ secrets.RAPIDAPI_KEY_JSEARCH }}
+      #- name: Run script to update Full Stack Jobs Data
+      #  run: npx ts-node scripts/update-jsearch-full-stack-jobs.ts
+      #  env:
+      #    RAPIDAPI_KEY_JSEARCH: ${{ secrets.RAPIDAPI_KEY_JSEARCH }}
       - name: Add, Commit and Push New Jobs Data
         env:
           GH_AT: ${{ secrets.GH_AT }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/jsearch-front-end.json
-          git commit -m "update front end jobs data"
+          git add data/jsearch-front-end.json data/jsearch-back-end.json data/jsearch-full-stack.json
+          git commit -m "update jobs data"
           git push https://x-access-token:${GH_AT}@github.com/AliFahed/jobs.git main
         continue-on-error: true
