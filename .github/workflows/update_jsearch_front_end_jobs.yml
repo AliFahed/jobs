@@ -12,9 +12,11 @@ jobs:
         with:
           node-version: lts/*
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          npm install -g ts-node
       - name: Run script to update Front-End Jobs Data
-        run: ts-node scripts/update-jsearch-front-end-jobs.ts
+        run: npx ts-node scripts/update-jsearch-front-end-jobs.ts
         env:
           RAPIDAPI_KEY_JSEARCH: ${{ secrets.RAPIDAPI_KEY_JSEARCH }}
       - name: Add, Commit and Push New Jobs Data
