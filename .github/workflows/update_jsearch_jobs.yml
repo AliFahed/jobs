@@ -1,4 +1,4 @@
-name: Update Front End Jobs Data
+name: Update Jobs Data
 on:
   workflow_dispatch:
   #schedule:
