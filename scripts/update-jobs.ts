@@ -11,7 +11,7 @@ const options = {
   },
 };
 
-export async function updateJobsData(apiURL: string, jobDataFileName: string) {
+async function updateJobsData(apiURL: string, jobDataFileName: string) {
   try {
     console.log("Headers:", options.headers);
     const response = await fetch(apiURL, options);
@@ -34,3 +34,5 @@ export async function updateJobsData(apiURL: string, jobDataFileName: string) {
     console.error("Error updating jobs data:", error);
   }
 }
+
+module.exports = updateJobsData;

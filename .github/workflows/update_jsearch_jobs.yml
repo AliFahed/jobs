@@ -21,14 +21,14 @@ jobs:
       #  run: npx ts-node scripts/update-jsearch-front-end-jobs.ts
       #  env:
       #    RAPIDAPI_KEY_JSEARCH: ${{ secrets.RAPIDAPI_KEY_JSEARCH }}
-      - name: Run script to update Back-End Jobs Data
-        run: npx ts-node scripts/update-jsearch-back-end-jobs.ts
-        env:
-          RAPIDAPI_KEY_JSEARCH: ${{ secrets.RAPIDAPI_KEY_JSEARCH }}
-      #- name: Run script to update Full Stack Jobs Data
-      #  run: npx ts-node scripts/update-jsearch-full-stack-jobs.ts
+      #- name: Run script to update Back-End Jobs Data
+      #  run: npx ts-node scripts/update-jsearch-back-end-jobs.ts
       #  env:
       #    RAPIDAPI_KEY_JSEARCH: ${{ secrets.RAPIDAPI_KEY_JSEARCH }}
+      - name: Run script to update Full Stack Jobs Data
+        run: npx ts-node scripts/update-jsearch-full-stack-jobs.ts
+        env:
+          RAPIDAPI_KEY_JSEARCH: ${{ secrets.RAPIDAPI_KEY_JSEARCH }}
       - name: Add, Commit and Push New Jobs Data
         env:
           GH_AT: ${{ secrets.GH_AT }}
