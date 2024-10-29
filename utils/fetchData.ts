@@ -1,5 +1,4 @@
-const fs = require("fs");
-const path = require("path");
+const saveData = require("./saveDataToJson");
 
 require("dotenv").config();
 
@@ -11,7 +10,7 @@ const options = {
   },
 };
 
-async function updateJobsData(apiURL: string, jobDataFileName: string) {
+async function fetchData(apiURL: string, jobDataFileName: string) {
   try {
     console.log("Headers:", options.headers);
     const response = await fetch(apiURL, options);
@@ -23,8 +22,7 @@ async function updateJobsData(apiURL: string, jobDataFileName: string) {
     };
 
     if (jobsData.data) {
-      const filePath = path.join(process.cwd(), "data", jobDataFileName);
-      fs.writeFileSync(filePath, JSON.stringify(jobsData, null, 2));
+      saveData(jobDataFileName, jobsData);
       console.log("Jobs data updated successfully.");
       console.log(result);
       return;
@@ -35,4 +33,4 @@ async function updateJobsData(apiURL: string, jobDataFileName: string) {
   }
 }
 
-module.exports = updateJobsData;
+module.exports = fetchData;
