@@ -1,8 +1,14 @@
-const saveData = require("./saveDataToJson");
+const {
+  saveDataToJsonAsRewrite: saveDataRewrite,
+  saveDataToJsonAsAppend: saveDataAppend,
+} = require("./crudJsonFile");
 
 require("dotenv").config();
 
-const options = {
+type apiName = "jsearch" | "jobs-api";
+type saveMode = "rewrite" | "append";
+
+const optionsJsearchAPI = {
   method: "GET",
   headers: {
     "x-rapidapi-key": process.env.RAPIDAPI_KEY_JSEARCH || "",
@@ -10,23 +16,69 @@ const options = {
   },
 };
 
-async function fetchData(apiURL: string, jobDataFileName: string) {
-  try {
-    console.log("Headers:", options.headers);
-    const response = await fetch(apiURL, options);
-    const result = await response.json();
+const optionsJobsAPI = {
+  method: "GET",
+  headers: {
+    "x-rapidapi-key": process.env.RAPIDAPI_KEY_JSEARCH || "",
+    "x-rapidapi-host": "jobs-api14.p.rapidapi.com",
+  },
+};
 
-    const jobsData = {
+async function fetchData(
+  apiName: apiName,
+  apiURL: string,
+  jobDataFileName: string,
+  mode: saveMode
+) {
+  try {
+    let response;
+    let result;
+
+    if (apiName === "jsearch") {
+      console.log("Headers:", optionsJsearchAPI.headers);
+      response = await fetch(apiURL, optionsJsearchAPI);
+      result = await response.json();
+    }
+
+    if (apiName === "jobs-api") {
+      console.log("Headers:", optionsJobsAPI.headers);
+      response = await fetch(apiURL, optionsJobsAPI);
+      result = await response.json();
+    }
+
+    // custom - adding current date with the response data
+    const resultData = {
       date: new Date().toLocaleDateString("en-GB"),
       data: result.data,
     };
 
-    if (jobsData.data) {
-      saveData(jobDataFileName, jobsData);
+    // standard - store only the response data
+    const resultData_salary = {
+      data: result,
+    };
+
+    // response from jsearch api
+    if (resultData.data) {
+      if (mode === "rewrite") {
+        saveDataRewrite(jobDataFileName, resultData);
+      }
+
       console.log("Jobs data updated successfully.");
       console.log(result);
       return;
     }
+
+    // response from jobs api
+    if (result.hasError === false) {
+      if (mode === "append") {
+        saveDataAppend(jobDataFileName, resultData_salary);
+      }
+
+      console.log("Jobs salary data updated successfully.");
+      console.log(result);
+      return;
+    }
+
     console.log(result);
   } catch (error) {
     console.error("Error updating jobs data:", error);

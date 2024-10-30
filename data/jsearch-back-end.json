@@ -1,5 +1,5 @@
 {
-  "date": "28/10/2024",
+  "date": "29/10/2024",
   "data": [
     {
       "job_id": "llYjz9y2AwIIAlrRAAAAAA==",
@@ -90,6 +90,11 @@
           "is_direct": false
         },
         {
+          "publisher": "FinTech Collective Job Board",
+          "apply_link": "https://jobs.fintech.io/companies/moneylion/jobs/32391134-backend-engineer?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+          "is_direct": false
+        },
+        {
           "publisher": "LinkedIn",
           "apply_link": "https://my.linkedin.com/jobs/view/backend-engineer-at-jobs-via-efinancialcareers-3991884648?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
           "is_direct": false
@@ -100,13 +105,13 @@
           "is_direct": false
         },
         {
-          "publisher": "TribeHired",
-          "apply_link": "https://www.tribehired.com/jobs/backend-engineer/c50a8afd-c73d-4393-bc6a-a7d49bdfe47b?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+          "publisher": "Employbl",
+          "apply_link": "https://www.employbl.com/jobs/backend-engineer-moneylion-643389?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
           "is_direct": false
         },
         {
-          "publisher": "Employbl",
-          "apply_link": "https://www.employbl.com/jobs/backend-engineer-moneylion-643389?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+          "publisher": "TribeHired",
+          "apply_link": "https://www.tribehired.com/jobs/backend-engineer/c50a8afd-c73d-4393-bc6a-a7d49bdfe47b?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
           "is_direct": false
         },
         {
@@ -117,11 +122,6 @@
         {
           "publisher": "Levels.fyi",
           "apply_link": "https://levels.fyi/jobs?jobId=104088838204203718&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-          "is_direct": false
-        },
-        {
-          "publisher": "Jobs | January Capital Job Board - January Capital",
-          "apply_link": "https://jobs.january.capital/companies/emq/jobs/30009985-backend-engineer?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
           "is_direct": false
         }
       ],
@@ -334,7 +334,7 @@
       "job_title": "Senior Backend Developer | Showwcase",
       "job_apply_link": "https://www.showwcase.com/job/13441-senior-backend-developer?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
       "job_apply_is_direct": false,
-      "job_apply_quality_score": 0.5787,
+      "job_apply_quality_score": 0.4894,
       "apply_options": [
         {
           "publisher": "Showwcase",
@@ -454,70 +454,6 @@
       "job_occupational_categories": null,
       "job_naics_code": "541613",
       "job_naics_name": "Marketing Consulting Services"
-    },
-    {
-      "job_id": "W5-lPDcLFdQzGVLuAAAAAA==",
-      "employer_name": "Primitive Technology Sdn Bhd",
-      "employer_logo": null,
-      "employer_website": null,
-      "employer_company_type": null,
-      "employer_linkedin": null,
-      "job_publisher": "WhatJobs",
-      "job_employment_type": "FULLTIME",
-      "job_title": "Senior Backend Developer / Project Manager (Node.js Expert)",
-      "job_apply_link": "https://en-my.whatjobs.com/job/Senior-Backend-Developer/kuala-lumpur-kuala-lumpur/21256588?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-      "job_apply_is_direct": false,
-      "job_apply_quality_score": 0.3854,
-      "apply_options": [
-        {
-          "publisher": "WhatJobs",
-          "apply_link": "https://en-my.whatjobs.com/job/Senior-Backend-Developer/kuala-lumpur-kuala-lumpur/21256588?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-          "is_direct": false
-        }
-      ],
-      "job_description": "We are seeking a skilled and experienced Back End Developer to join our development team. As a Back End Developer, you will be responsible for designing, implementing, and maintaining the server-side logic of our applications, ensuring seamless integration with the front end. Your focus will be on building scalable and efficient systems that handle data processing, storage, and retrieval.Responsibilities\n\nServer-side Development:Design, develop, and maintain server-side logic using server-side programming languages (e.g Node.js).Build scalable and high-performance applications that meet business requirements.Database Management:Design and implement database schemas.Optimize database queries for performance and efficiency.Ensure data security, integrity, and availability.API Development:Develop and maintain RESTful APIs for communication between the front end and back end systems.Collaborate with front end developers to integrate user-facing elements with server-side logic.System Integration:Collaborate with cross-functional teams to integrate front end and back end components.Ensure seamless data flow and communication between different parts of the application.Security and Authentication:Implement security best practices to protect sensitive data.Develop and implement user authentication and authorization systems.Performance Optimization:Identify and address performance bottlenecks in the back end code.Conduct regular code reviews to ensure code quality and adherence to best practices.Scalability and Reliability:Design and implement solutions that can scale with the growing user base.Implement monitoring and error-handling mechanisms to ensure system reliability.Collaborate with front end developers, product managers, and other stakeholders to understand project requirements and deliver high-quality solutions.Requirements\n\nEducation and Experience:Bachelor’s degree in Computer Science, Information Technology, or related field.Minimum 2 years of experience; fresh graduates are welcome to apply.Proven experience as a Back End Developer or similar role.Technical Skills:Proficiency in server-side programming languages (e.g. Node.js).Experience with database systems (e.g., NoSQL, MongoDB).Familiarity with front-end technologies and frameworks is a plus.API Development:Strong experience in designing and implementing RESTful APIs.Version Control:Familiarity with version control systems (e.g., Git).Problem-solving Skills:Strong problem-solving and troubleshooting skills.If you are a talented Back End Developer with a passion for building robust and scalable systems, we invite you to apply and be part of our dynamic development team.\n\n#J-18808-Ljbffr",
-      "job_is_remote": false,
-      "job_posted_at_timestamp": 1729987200,
-      "job_posted_at_datetime_utc": "2024-10-27T00:00:00.000Z",
-      "job_city": "Kuala Lumpur",
-      "job_state": null,
-      "job_country": "MY",
-      "job_latitude": 3.1499221,
-      "job_longitude": 101.694466,
-      "job_benefits": null,
-      "job_google_link": "https://www.google.com/search?gl=us&hl=en&rciv=jb&q=back-end+developer+in+kuala-lumpur,+malaysia&start=0&chips=employment_type:FULLTIME,employment_type:CONTRACTOR,requirements:years3under,requirements:no_experience&schips=employment_type;FULLTIME;CONTRACTOR,requirements;years3under;no_experience&udm=8#vhid=vt%3D20/docid%3DW5-lPDcLFdQzGVLuAAAAAA%3D%3D&vssid=jobs-detail-viewer",
-      "job_offer_expiration_datetime_utc": "2024-11-24T03:07:00.000Z",
-      "job_offer_expiration_timestamp": 1732417620,
-      "job_required_experience": {
-        "no_experience_required": "false",
-        "required_experience_in_months": "24",
-        "experience_mentioned": "true",
-        "experience_preferred": "true"
-      },
-      "job_required_skills": null,
-      "job_required_education": {
-        "postgraduate_degree": false,
-        "professional_certification": false,
-        "high_school": false,
-        "associates_degree": false,
-        "bachelors_degree": false,
-        "degree_mentioned": "true",
-        "degree_preferred": "true",
-        "professional_certification_mentioned": "false"
-      },
-      "job_experience_in_place_of_education": false,
-      "job_min_salary": null,
-      "job_max_salary": null,
-      "job_salary_currency": null,
-      "job_salary_period": null,
-      "job_highlights": {},
-      "job_job_title": "Senior",
-      "job_posting_language": "en",
-      "job_onet_soc": "15113400",
-      "job_onet_job_zone": "3",
-      "job_occupational_categories": null,
-      "job_naics_code": null,
-      "job_naics_name": null
     },
     {
       "job_id": "xDM33_tU8JtmMLVMAAAAAA==",
@@ -653,77 +589,111 @@
       "job_naics_name": null
     },
     {
-      "job_id": "MJWixFPR3ILxRBlkAAAAAA==",
-      "employer_name": "Sourceflow",
+      "job_id": "W5-lPDcLFdQzGVLuAAAAAA==",
+      "employer_name": "Primitive Technology Sdn Bhd",
       "employer_logo": null,
       "employer_website": null,
       "employer_company_type": null,
       "employer_linkedin": null,
-      "job_publisher": "SourceFlow",
+      "job_publisher": "Joblum Malaysia",
       "job_employment_type": "FULLTIME",
-      "job_title": "Frontend Developer",
-      "job_apply_link": "https://www.sourceflow.co.uk/join-us/4-frontend-developer?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-      "job_apply_is_direct": false,
-      "job_apply_quality_score": 0.687,
+      "job_title": "Senior Backend Developer / Project Manager (Node.js Expert)",
+      "job_apply_link": "https://my.joblum.com/job/senior-backend-developer-project-manager/1676456?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+      "job_apply_is_direct": true,
+      "job_apply_quality_score": 0.4371,
       "apply_options": [
         {
-          "publisher": "SourceFlow",
-          "apply_link": "https://www.sourceflow.co.uk/join-us/4-frontend-developer?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-          "is_direct": false
-        },
-        {
-          "publisher": "LinkedIn",
-          "apply_link": "https://my.linkedin.com/jobs/view/frontend-developer-at-ricebowl-malaysia-4048813348?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-          "is_direct": false
-        },
-        {
-          "publisher": "Foundit Malaysia",
-          "apply_link": "https://www.foundit.my/job/frontend-developer-simpletruss-malaysia-32491088?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-          "is_direct": false
-        },
-        {
-          "publisher": "Maukerja.my",
-          "apply_link": "https://www.maukerja.my/job/20708398-frontend-developer?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-          "is_direct": false
-        },
-        {
-          "publisher": "Imtexh",
-          "apply_link": "https://www.imtexh.com/career/jobs/frontend-developer/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-          "is_direct": false
-        },
-        {
-          "publisher": "JobzMall",
-          "apply_link": "https://www.jobzmall.com/endava/job/frontend-developer-6?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+          "publisher": "Joblum Malaysia",
+          "apply_link": "https://my.joblum.com/job/senior-backend-developer-project-manager/1676456?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
           "is_direct": true
         },
         {
-          "publisher": "Jooble",
-          "apply_link": "https://my.jooble.org/jdp/-8697246353897213838?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-          "is_direct": false
-        },
-        {
-          "publisher": "Jobs Trabajo.org",
-          "apply_link": "https://my.trabajo.org/job-2879-7b2720bc93712bc6c606a8e6cabf2ecd?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+          "publisher": "WhatJobs",
+          "apply_link": "https://en-my.whatjobs.com/job/Senior-Backend-Developer/kuala-lumpur-kuala-lumpur/21256588?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
           "is_direct": false
         }
       ],
-      "job_description": "> Who we are / What we do\n\nSourceFlow is the ‘Recruitment Marketing Platform’ built for recruitment agencies. Our technology helps recruitment companies attract the best candidates, clients and consultants. This helps them build a more powerful brand and increase revenue.We only launched at the start of 2022 but we’re already on an incredible journey.\n\nIn past 24 months we’ve grown to a team of 20_ FT/Perm staff, and have successfully onboarded over 100 recruitment companies in the Europe, APAC & the US. We’ve set ourselves some big goals and we’re excited to be surpassing them already. We have a global reach in terms of customers and people. Currently we work hybrid in Sentral KL offices. The team operating from there is part of our UK operations and helps support, customers globally in delivery and beyond. We are looking for our next development superstar!\n\n> What we’re looking for\n\nAs a Front End Developer you’ll be responsible for supporting and developing beautiful websites that convert candidates, clients and consultants. The quality of your work will be on display for the world to see and every line of code should support our mission to ‘to build revenue-generating recruitment websites and marketing technology that makes our customers look like rockstars!\n\nWe're looking for super-organised and self-motivated people who take pride in their work. But more importantly we’re looking for real team players that demonstrate the following values in everything they do;\n\n> Continual INNOVATION in your approach to building great websites and technology\n\n> CUSTOMER FIRST approach to every customer interaction\n\n> An ETHICAL approach to the way you approach every stakeholder\n\n> A minimum of 2 years experience in a similar role.\n\nYour New Role\n\n> This role is all about getting the job done, achieving results and creating a great product for our customers. Each day is fast-paced and varied but you’ll be supported by a great global team.\n\nA typical project/day might involve;\n\n> Liaising with the experience team and clients to understand requirements\n\n> Building websites on the SourceFlow platform\n\n> Managing deployment, problem solving and fixing bugs\n\n> Upskilling in terms of Node, Next.js and React\n\n> Introducing innovative solutions to complex problems\n\nDeploying your work to GithubYour goals as a Front-End Developer include;\n\n> Delivering a high quality, well coded, error free projects\n\n> Working to timescales for delivery\n\n> Working with your team to build a culture of high performance\n\n> What you get in return\n\nThis is so much more than a job. We’re building a special business and we want you to be part of our exciting journey. We want every member of our team to achieve their personal goals and build their career.\n\nThings you’d expect include;\n\n> Competitive salary\n\n> Apple Mac (and other quality tech. to use)\n\n> A fun, caring and supportive team - our culture is everything\n\n> Training\n\nAnd the sprinkles on top;\n\n> Quarterly paid-for work socials\n\n> Spontaneous team lunches\n\n> Lovely offices in the KL Sentral\n\n> Hybrid model - 3 days in the office. Monday's & Friday's working from home - what's not to love!",
+      "job_description": "Backend Developer\n\nOverview\n\nWe are seeking a skilled and experienced Back End Developer to join our development team. As a Back End Developer, you will be responsible for designing, implementing, and maintaining the server-side logic of our applications, ensuring seamless integration with the front end. Your focus will be on building scalable and efficient systems that handle data processing, storage, and retrieval.\n\nResponsibilities\n\nServer-side Development:\n\n• Design, develop, and maintain server-side logic using server-side programming languages (e.g Node.js).\n\n• Build scalable and high-performance applications that meet business requirements.\n\nDatabase Management:\n\n• Design and implement database schemas.\n\n• Optimize database queries for performance and efficiency.\n\n• Ensure data security, integrity, and availability.\n\nAPI Development:\n\n• Develop and maintain RESTful APIs for communication between the front end and back end systems.\n\n• Collaborate with front end developers to integrate user-facing elements with server-side logic.\n\nSystem Integration:\n\n• Collaborate with cross-functional teams to integrate front end and back end components.\n\n• Ensure seamless data flow and communication between different parts of the application.\n\nSecurity and Authentication:\n\n• Implement security best practices to protect sensitive data.\n\n• Develop and implement user authentication and authorization systems.\n\nPerformance Optimization:\n\n• Identify and address performance bottlenecks in the back end code.\n\n• Conduct regular code reviews to ensure code quality and adherence to best practices.\n\nScalability and Reliability:\n\n• Design and implement solutions that can scale with the growing user base.\n\n• Implement monitoring and error-handling mechanisms to ensure system reliability.\n\nCollaboration:\n\n• Collaborate with front end developers, product managers, and other stakeholders to understand project requirements and deliver high-quality solutions.\n\nRequirements\n\nEducation and Experience:\n\n• Bachelor’s degree in Computer Science, Information Technology, or related field.\n\n• Minimum 2 years of experience,\n\n• Fresh graduates are welcome to apply\n\n• Proven experience as a Back End Developer or similar role.\n\nTechnical Skills:\n\n• Proficiency in server-side programming languages (e.g. Node.js).\n\n• Proficiency in TypeScript and Javascript.\n\n• Experience with database systems (e.g., NoSQL, MongoDB).\n\n• Familiarity with front-end technologies and frameworks is a plus.\n\nAPI Development:\n\n• Strong experience in designing and implementing RESTful APIs.\n\nVersion Control:\n\n• Familiarity with version control systems (e.g., Git).\n\nProblem-solving Skills:\n\n• Strong problem-solving and troubleshooting skills.\n\nIf you are a talented Back End Developer with a passion for building robust and scalable systems, we invite you to apply and be part of our dynamic development team.",
       "job_is_remote": false,
-      "job_posted_at_timestamp": 1714031563,
-      "job_posted_at_datetime_utc": "2024-04-25T07:52:43.000Z",
+      "job_posted_at_timestamp": 1729738614,
+      "job_posted_at_datetime_utc": "2024-10-24T02:56:54.000Z",
+      "job_city": "Kuala Lumpur",
+      "job_state": null,
+      "job_country": "MY",
+      "job_latitude": 3.1467855,
+      "job_longitude": 101.7113,
+      "job_benefits": null,
+      "job_google_link": "https://www.google.com/search?gl=us&hl=en&rciv=jb&q=back-end+developer+in+kuala-lumpur,+malaysia&start=0&chips=employment_type:FULLTIME,employment_type:CONTRACTOR,requirements:years3under,requirements:no_experience&schips=employment_type;FULLTIME;CONTRACTOR,requirements;years3under;no_experience&udm=8#vhid=vt%3D20/docid%3DW5-lPDcLFdQzGVLuAAAAAA%3D%3D&vssid=jobs-detail-viewer",
+      "job_offer_expiration_datetime_utc": "2024-11-23T02:56:54.000Z",
+      "job_offer_expiration_timestamp": 1732330614,
+      "job_required_experience": {
+        "no_experience_required": "false",
+        "required_experience_in_months": "24",
+        "experience_mentioned": "true",
+        "experience_preferred": "false"
+      },
+      "job_required_skills": null,
+      "job_required_education": {
+        "postgraduate_degree": false,
+        "professional_certification": false,
+        "high_school": false,
+        "associates_degree": false,
+        "bachelors_degree": false,
+        "degree_mentioned": "true",
+        "degree_preferred": "true",
+        "professional_certification_mentioned": "false"
+      },
+      "job_experience_in_place_of_education": false,
+      "job_min_salary": 10000,
+      "job_max_salary": 15000,
+      "job_salary_currency": null,
+      "job_salary_period": null,
+      "job_highlights": {},
+      "job_job_title": "Senior",
+      "job_posting_language": "en",
+      "job_onet_soc": "15113400",
+      "job_onet_job_zone": "3",
+      "job_occupational_categories": null,
+      "job_naics_code": null,
+      "job_naics_name": null
+    },
+    {
+      "job_id": "s05ATvKYgEFMzXiEAAAAAA==",
+      "employer_name": "E solutions It Services Private Limited",
+      "employer_logo": null,
+      "employer_website": null,
+      "employer_company_type": null,
+      "employer_linkedin": null,
+      "job_publisher": "Jobrapido.com",
+      "job_employment_type": "FULLTIME",
+      "job_title": "Back end developer shell scripting",
+      "job_apply_link": "https://my.jobrapido.com/jobpreview/22176774?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+      "job_apply_is_direct": false,
+      "job_apply_quality_score": 0.3913,
+      "apply_options": [
+        {
+          "publisher": "Jobrapido.com",
+          "apply_link": "https://my.jobrapido.com/jobpreview/22176774?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+          "is_direct": false
+        }
+      ],
+      "job_description": "Contract 12 months location malaysia kl onsite role work from office min 2 years exp junior mandatory shell scripting unix scripting good to have",
+      "job_is_remote": false,
+      "job_posted_at_timestamp": 1700697600,
+      "job_posted_at_datetime_utc": "2023-11-23T00:00:00.000Z",
       "job_city": "Kuala Lumpur",
       "job_state": null,
       "job_country": "MY",
       "job_latitude": 3.1499221,
       "job_longitude": 101.694466,
       "job_benefits": null,
-      "job_google_link": "https://www.google.com/search?gl=us&hl=en&rciv=jb&q=back-end+developer+in+kuala-lumpur,+malaysia&start=0&chips=employment_type:FULLTIME,employment_type:CONTRACTOR,requirements:years3under,requirements:no_experience&schips=employment_type;FULLTIME;CONTRACTOR,requirements;years3under;no_experience&udm=8#vhid=vt%3D20/docid%3DMJWixFPR3ILxRBlkAAAAAA%3D%3D&vssid=jobs-detail-viewer",
-      "job_offer_expiration_datetime_utc": "2027-04-08T23:59:59.000Z",
-      "job_offer_expiration_timestamp": 1807228799,
+      "job_google_link": "https://www.google.com/search?gl=us&hl=en&rciv=jb&q=back-end+developer+in+kuala-lumpur,+malaysia&start=0&chips=employment_type:FULLTIME,employment_type:CONTRACTOR,requirements:years3under,requirements:no_experience&schips=employment_type;FULLTIME;CONTRACTOR,requirements;years3under;no_experience&udm=8#vhid=vt%3D20/docid%3Ds05ATvKYgEFMzXiEAAAAAA%3D%3D&vssid=jobs-detail-viewer",
+      "job_offer_expiration_datetime_utc": null,
+      "job_offer_expiration_timestamp": null,
       "job_required_experience": {
         "no_experience_required": "false",
-        "required_experience_in_months": "24",
-        "experience_mentioned": "true",
+        "required_experience_in_months": null,
+        "experience_mentioned": "false",
         "experience_preferred": "false"
       },
       "job_required_skills": null,
@@ -745,8 +715,8 @@
       "job_highlights": {},
       "job_job_title": null,
       "job_posting_language": "en",
-      "job_onet_soc": "15113400",
-      "job_onet_job_zone": "3",
+      "job_onet_soc": "15113300",
+      "job_onet_job_zone": "4",
       "job_occupational_categories": null,
       "job_naics_code": null,
       "job_naics_name": null

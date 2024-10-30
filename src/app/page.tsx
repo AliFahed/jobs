@@ -1,7 +1,7 @@
 import data from "../../data/jsearch-front-end.json";
 import Image from "next/image";
 import NoLogo from "../../images/no-logo.webp";
-import { JobsSalary } from "../components/JobsSalary";
+import { JobsSalary } from "../components/BackendJobSalaryData";
 
 export default function Home() {
   return (
