@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "description": "This JSON file contains the query params of two apis that each request api url consumes from the below data, when its changed it reflects on the api request and response."
+  },
+  "jsearch": {
+    "front_end_title_and_country": "Front-End Developer in Kuala-Lumpur, Malaysia",
+    "back_end_title_and_country": "Back-End Developer in Kuala-Lumpur, Malaysia",
+    "full_stack_title_and_country": "Back-End Developer in Kuala-Lumpur, Malaysia"
+  },
+  "jobs_api_salary": {
+    "job_title": {
+      "front_end": "front end developer",
+      "back_end": "back end developer",
+      "full_stack": "full stack developer"
+    },
+    "country": {
+      "malaysia": "MY",
+      "hong_kong": "HK",
+      "singapore": "SG",
+      "japan": "JP",
+      "united_states": "US",
+      "germany": "DE",
+      "united_kingdom": "GB",
+      "netherlands": "NL",
+      "united_arab_emirates": "AE",
+      "saudi_arabia": "SA",
+      "qatar": "QA"
+    }
+  }
+}
