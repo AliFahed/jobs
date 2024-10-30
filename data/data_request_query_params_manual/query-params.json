@@ -11,8 +11,20 @@
     "job_title": {
       "front_end": "front end developer",
       "back_end": "back end developer",
-      "Full_Stack": "full stack developer"
+      "full_stack": "full stack developer"
     },
-    "country": {}
+    "country": {
+      "malaysia": "MY",
+      "hong_kong": "HK",
+      "singapore": "SG",
+      "japan": "JP",
+      "united_states": "US",
+      "germany": "DE",
+      "united_kingdom": "GB",
+      "netherlands": "NL",
+      "united_arab_emirates": "AE",
+      "saudi_arabia": "SA",
+      "qatar": "QA"
+    }
   }
 }

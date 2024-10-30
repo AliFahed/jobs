@@ -35,13 +35,11 @@ async function fetchData(
     let result;
 
     if (apiName === "jsearch") {
-      console.log("Headers:", optionsJsearchAPI.headers);
       response = await fetch(apiURL, optionsJsearchAPI);
       result = await response.json();
     }
 
     if (apiName === "jobs-api") {
-      console.log("Headers:", optionsJobsAPI.headers);
       response = await fetch(apiURL, optionsJobsAPI);
       result = await response.json();
     }
@@ -62,9 +60,6 @@ async function fetchData(
       if (mode === "rewrite") {
         saveDataRewrite(jobDataFileName, resultData);
       }
-
-      console.log("Jobs data updated successfully.");
-      console.log(result);
       return;
     }
 
@@ -73,13 +68,8 @@ async function fetchData(
       if (mode === "append") {
         saveDataAppend(jobDataFileName, resultData_salary);
       }
-
-      console.log("Jobs salary data updated successfully.");
-      console.log(result);
       return;
     }
-
-    console.log(result);
   } catch (error) {
     console.error("Error updating jobs data:", error);
   }
