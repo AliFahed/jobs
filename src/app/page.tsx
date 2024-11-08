@@ -2,10 +2,14 @@ import data from "../../data/jsearch-front-end.json";
 import Image from "next/image";
 import NoLogo from "../../images/no-logo.webp";
 import { JobsSalary } from "../components/BackendJobSalaryData";
+import { JobsData } from "../components/JobCard";
 
 export default function Home() {
   return (
     <>
+      <JobsData />
+      <br />
+      <br />
       <JobsSalary />
       <div>Last Updtate on: {data.date}</div>
       {data.data.map((job) => (
