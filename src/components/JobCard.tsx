@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import NoLogo from "../../images/no-logo.webp";
 import Image from "next/image";
