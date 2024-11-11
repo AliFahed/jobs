@@ -1,19 +1,20 @@
-import data from "../../data/jsearch-front-end.json";
+"use client";
+
 import NoLogo from "../../images/no-logo.webp";
 import Image from "next/image";
 import { Building2, MapPin, Calendar, ExternalLink } from "lucide-react";
 import Link from "next/link";
 
-export const JobsData = () => {
+export const JobCard = ({ jobs, jobTitle, role }: any) => {
   return (
     <div className="container px-4 py-16 mx-auto max-w-7xl">
       <div className="flex justify-between items-center mb-7">
-        <h1 className="text-3xl font-bold">Front-End Development Jobs</h1>
-        <p className="">Jobs Updated on: {data.date}</p>
+        <h1 className="text-3xl font-bold">{jobTitle}</h1>
+        <p className="">Jobs Updated on: {jobs.date}</p>
       </div>
 
       <div className="grid grid-cols-1 gap-6">
-        {data.data.map((job) => (
+        {jobs.data.map((job: any) => (
           <div
             key={job.job_id}
             className="mb-5 list-none border p-5 rounded-xl"
@@ -31,7 +32,7 @@ export const JobsData = () => {
 
                   <div>
                     <Link
-                      href={`/jobs/${job.job_id}`}
+                      href={`/jobs/${role}/${job.job_id}`}
                       className="hover:text-gray-400"
                     >
                       <h1 className="text-xl font-bold">{job.job_title}</h1>
@@ -77,7 +78,7 @@ export const JobsData = () => {
 
                 <button className="bg-gray-800 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-md">
                   <Link
-                    href={`/jobs/${job.job_id}`}
+                    href={`/jobs/${role}/${job.job_id}`}
                     className="flex items-center gap-2"
                   >
                     View Details

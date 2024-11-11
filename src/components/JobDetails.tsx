@@ -1,10 +1,14 @@
 "use client";
 
-import data from "../../data/jsearch-front-end.json";
+import frontendJobsData from "../../data/jsearch-front-end.json";
+import backendJobsData from "../../data/jsearch-back-end.json";
+import fullstackJobsData from "../../data/jsearch-full-stack.json";
 import {
   Building2,
   MapPin,
   Calendar,
+  Linkedin,
+  Globe,
   ExternalLink,
   GraduationCap,
   Briefcase,
@@ -14,12 +18,26 @@ import {
 import Image from "next/image";
 import NoLogo from "../../images/no-logo.webp";
 import { usePathname } from "next/navigation";
+import { useSelector } from "react-redux";
+import { RootState } from "../store/store";
 
 export const JobDetails = () => {
+  const selectedCategory = useSelector(
+    (state: RootState) => state.category.selectedCategory
+  );
+
   const pathname = usePathname();
   const jobId = pathname.split("/").pop();
+
+  let job;
   // Find the job in the JSON data by ID
-  const job = data.data.find((job) => job.job_id === jobId);
+  if (selectedCategory === "frontend") {
+    job = frontendJobsData.data.find((job) => job.job_id === jobId);
+  } else if (selectedCategory === "backend") {
+    job = backendJobsData.data.find((job) => job.job_id === jobId);
+  } else {
+    job = fullstackJobsData.data.find((job) => job.job_id === jobId);
+  }
 
   if (!job) {
     return (
@@ -32,7 +50,6 @@ export const JobDetails = () => {
 
   const formatDescription = (description: string) => {
     const lines = description.split("\n").map((line, index) => {
-      // Add <li> for bullet points
       if (line.startsWith("•")) {
         return (
           <li key={index} className="list-none">
@@ -40,7 +57,6 @@ export const JobDetails = () => {
           </li>
         );
       }
-      // Wrap other lines in <p>
       return <div key={index}>{line}</div>;
     });
     return lines;
@@ -83,6 +99,36 @@ export const JobDetails = () => {
                               job.job_posted_at_datetime_utc
                             ).toLocaleDateString("en-GB")}
                           </p>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          {job.employer_linkedin ? (
+                            <div className="flex items-center gap-2">
+                              <Linkedin className="w-4 h-4" />
+                              <a
+                                href={job.employer_linkedin}
+                                className="text-blue-700"
+                              >
+                                LinkedIn
+                              </a>
+                            </div>
+                          ) : (
+                            ""
+                          )}
+                        </div>
+                        <div className="flex items-center gap-2">
+                          {job.employer_website ? (
+                            <div className="flex items-center gap-2">
+                              <Globe className="w-4 h-4" />
+                              <a
+                                href={job.employer_website}
+                                className="text-blue-700"
+                              >
+                                Website
+                              </a>
+                            </div>
+                          ) : (
+                            ""
+                          )}
                         </div>
                       </div>
                     </div>
