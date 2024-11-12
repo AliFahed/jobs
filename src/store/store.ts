@@ -1,9 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import categoryReducer from "./categorySlice";
+import salaryCategoryReducer from "./salaryCategorySlice";
+import headerActiveLinkReducer from "./HeaderActiveLinkSlice";
 
 export const store = configureStore({
   reducer: {
-    category: categoryReducer,
+    headerLink: headerActiveLinkReducer,
+    job: categoryReducer,
+    salary: salaryCategoryReducer,
   },
 });
 

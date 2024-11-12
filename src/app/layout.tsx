@@ -31,7 +31,7 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          <Header />
+          <Header option="Link In page" />
           {children}
         </body>
       </html>

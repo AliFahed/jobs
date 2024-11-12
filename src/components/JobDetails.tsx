@@ -20,10 +20,11 @@ import NoLogo from "../../images/no-logo.webp";
 import { usePathname } from "next/navigation";
 import { useSelector } from "react-redux";
 import { RootState } from "../store/store";
+import Link from "next/link";
 
 export const JobDetails = () => {
   const selectedCategory = useSelector(
-    (state: RootState) => state.category.selectedCategory
+    (state: RootState) => state.job.selectedJobCategory
   );
 
   const pathname = usePathname();
@@ -41,9 +42,12 @@ export const JobDetails = () => {
 
   if (!job) {
     return (
-      <div className="flex flex-col justify-center items-center h-32 gap-4">
+      <div className="flex flex-col justify-center items-center gap-4 pt-32">
         <h1 className="text-4xl">Job not found</h1>
         <p>Please try again!</p>
+        <Link href="/" className="text-blue-600 underline">
+          Go back
+        </Link>
       </div>
     );
   }

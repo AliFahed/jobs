@@ -1,5 +1,3 @@
-// "use client";
-
 import NoLogo from "../../images/no-logo.webp";
 import Image from "next/image";
 import { Building2, MapPin, Calendar, ExternalLink } from "lucide-react";
@@ -7,7 +5,7 @@ import Link from "next/link";
 
 export const JobCard = ({ jobs, jobTitle, role }: any) => {
   return (
-    <div className="container px-4 py-16 mx-auto max-w-7xl">
+    <div className="container px-4 py-10 mx-auto max-w-7xl">
       <div className="flex justify-between items-center mb-7">
         <h1 className="text-3xl font-bold">{jobTitle}</h1>
         <p className="">Jobs Updated on: {jobs.date}</p>

@@ -1,22 +1,22 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface CategoryState {
-  selectedCategory: string;
+  selectedJobCategory: string;
 }
 
 const initialState: CategoryState = {
-  selectedCategory: "frontend",
+  selectedJobCategory: "frontend",
 };
 
 const categorySlice = createSlice({
-  name: "category",
+  name: "jobCategory",
   initialState,
   reducers: {
-    setCategory: (state, action: PayloadAction<string>) => {
-      state.selectedCategory = action.payload;
+    setJobCategory: (state, action: PayloadAction<string>) => {
+      state.selectedJobCategory = action.payload;
     },
   },
 });
 
-export const { setCategory } = categorySlice.actions;
+export const { setJobCategory } = categorySlice.actions;
 export default categorySlice.reducer;
