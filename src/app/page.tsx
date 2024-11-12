@@ -1,155 +1,143 @@
-import data from "../../data/jsearch-front-end.json";
-import Image from "next/image";
-import NoLogo from "../../images/no-logo.webp";
-import { JobsSalary } from "../components/BackendJobSalaryData";
+"use client";
+
+import { RootState } from "@/store/store";
+import { setJobCategory } from "@/store/categorySlice";
+import { setSalaryCategory } from "@/store/salaryCategorySlice";
+import { useSelector, useDispatch } from "react-redux";
+import frontendJobsData from "../../data/jsearch-front-end.json";
+import backendJobsData from "../../data/jsearch-back-end.json";
+import fullstackJobsData from "../../data/jsearch-full-stack.json";
+import frontendSalaryData from "../../data/jobs-api-front-end-salary.json";
+import backendSalaryData from "../../data/jobs-api-back-end-salary.json";
+import fullstackSalaryData from "../../data/jobs-api-full-stack-salary.json";
+import { JobCard } from "../components/JobCard";
+import { SalaryCard } from "../components/SalaryCard";
+
+const categories = ["frontend", "backend", "fullstack"];
 
 export default function Home() {
+  const dispatch = useDispatch();
+  const selectedJobCategory = useSelector(
+    (state: RootState) => state.job.selectedJobCategory
+  );
+
+  const selectedSalaryCategory = useSelector(
+    (state: RootState) => state.salary.selectedSalaryCategory
+  );
+
+  const jobTitle = () => {
+    if (selectedJobCategory === "frontend") {
+      return "Front-End Development Jobs";
+    } else if (selectedJobCategory === "backend") {
+      return "Back-End Development Jobs";
+    } else {
+      return "Full-Stack Development Jobs";
+    }
+  };
+
+  const salaryTitle = () => {
+    if (selectedSalaryCategory === "frontend") {
+      return "Front-End Development Salaries";
+    } else if (selectedSalaryCategory === "backend") {
+      return "Back-End Development Salaries";
+    } else {
+      return "Full-Stack Development Salaries";
+    }
+  };
+
+  const jobDataJson = () => {
+    if (selectedJobCategory === "frontend") {
+      return frontendJobsData;
+    } else if (selectedJobCategory === "backend") {
+      return backendJobsData;
+    } else {
+      return fullstackJobsData;
+    }
+  };
+
+  const salaryDataJson = () => {
+    if (selectedSalaryCategory === "frontend") {
+      return frontendSalaryData;
+    } else if (selectedSalaryCategory === "backend") {
+      return backendSalaryData;
+    } else {
+      return fullstackSalaryData;
+    }
+  };
+
   return (
     <>
-      <JobsSalary />
-      <div>Last Updtate on: {data.date}</div>
-      {data.data.map((job) => (
-        <li key={job.job_id} className="mb-10">
-          <Image
-            src={job.employer_logo ? job.employer_logo : NoLogo}
-            alt="company logo"
-            width={75}
-            height={75}
-            className="rounded-xl"
-          />
-          <h1>{job.job_title}</h1>
-          <p>{job.job_employment_type}</p>
-          <p>{job.employer_name}</p>
-
-          <p>{job.job_city}</p>
-          <p>{job.job_country}</p>
-
-          <div className="social icons">
-            {job.employer_website ? (
-              // <Image
-              //   src="website-icons"
-              //   alt="website icon"
-              //   width={32}
-              //   height={32}
-              // />
-              <a href={job.employer_website}>Company Link</a>
-            ) : (
-              // </Image>
-              ""
-            )}
-            {job.employer_linkedin ? (
-              // <Image
-              //   src="website-icons"
-              //   alt="website icon"
-              //   width={32}
-              //   height={32}
-              // />
-              <a href={job.employer_linkedin}>LinkedIn Link</a>
-            ) : (
-              // </Image>
-              ""
-            )}
-          </div>
-
-          <p>
-            Job Quality Score: {Math.round(job.job_apply_quality_score * 100)}%
+      <div className="container px-4 pt-16 mx-auto max-w-7xl">
+        <section className="jobs-section mt-10">
+          <h1 className="text-4xl font-bold text-center mb-2">Web Dev Jobs</h1>
+          <p className="text-gray-600 text-center mb-8">
+            Find and Apply to Web Dev Jobs in Malaysia
           </p>
 
-          <div className="apply-options">
-            <h3>Apply Options</h3>
-            <ul>
-              {job.apply_options.map((option, index) => (
-                <li key={index}>
-                  <p>Direct Application: {option.is_direct ? "Yes" : "No"}</p>
-                  <a
-                    href={option.apply_link}
-                    target="_blank"
-                    rel="noopener noreferrer"
+          <div className="flex justify-center mb-2">
+            <div className="inline-flex rounded-lg border border-gray-200 bg-white p-1">
+              <div className="text-center">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    className={`px-4 py-2 m-2 rounded transition-colors duration-200 ${
+                      selectedJobCategory === category
+                        ? "bg-gray-800  text-white "
+                        : "text-gray-600 hover:bg-gray-300"
+                    }`}
+                    onClick={() => dispatch(setJobCategory(category))}
                   >
-                    <button className="px-7 py-3 rounded-sm bg-black text-white">
-                      {option.publisher}
-                    </button>
-                  </a>
-                </li>
-              ))}
-            </ul>
+                    {category}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
+          <JobCard
+            jobs={jobDataJson()}
+            jobTitle={jobTitle()}
+            role={selectedJobCategory}
+          />
+        </section>
 
-          <p>{job.job_description}</p>
-          {/* <p>{job.job_posted_at_timestamp}</p> */}
-          <p>{job.job_posted_at_datetime_utc}</p>
-
-          <div className="google-maps">
-            <a
-              className="text-blue-700"
-              href={`http://maps.google.com/maps?q=${job.job_latitude},${job.job_longitude}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Google Maps Icon
-            </a>
-          </div>
-
-          <p>
-            Job opening Expiry:
-            {job.job_offer_expiration_datetime_utc
-              ? job.job_offer_expiration_datetime_utc
-              : "Not Mentioned"}
+        <section id="salary-section" className="pt-14">
+          <h1 className="text-4xl font-bold text-center mb-2">
+            Developer Salary Guide
+          </h1>
+          <p className="text-gray-600 text-center mb-8">
+            Comprehensive salary data for different developer roles across
+            multiple countries
           </p>
-          {/* <p>{job.job_offer_expiration_timestamp}</p> */}
 
-          <div className="job-requirements">
-            <h3>Job Requirements</h3>
-            <p>
-              Degree Preferred:{" "}
-              {job.job_required_education.degree_preferred === "true"
-                ? "Yes"
-                : "No"}
-            </p>
-            <p>
-              {job.job_required_experience.no_experience_required === "true" ? (
-                <p>No Experience Required: Yes</p>
-              ) : (
-                ""
-              )}
-            </p>
-            <p>
-              Required Experience (in months):{" "}
-              {job.job_required_experience.required_experience_in_months ? (
-                <span>
-                  {job.job_required_experience.required_experience_in_months}
-                </span>
-              ) : (
-                "Not Mentioned"
-              )}
-            </p>
-            <p>
-              Experience Preferred:{" "}
-              {job.job_required_experience.experience_preferred === "true"
-                ? "Yes"
-                : "No"}
-            </p>
+          <div className="flex justify-center mb-2">
+            <div className="inline-flex rounded-lg border border-gray-200 bg-white p-1">
+              <div className="text-center">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    className={`px-4 py-2 m-2 rounded transition-colors duration-200 ${
+                      selectedSalaryCategory === category
+                        ? "bg-gray-800  text-white "
+                        : "text-gray-600 hover:bg-gray-300"
+                    }`}
+                    onClick={() => dispatch(setSalaryCategory(category))}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
 
-          {/* array-string-link
-          <p>{job.job_required_skills}</p> */}
-
-          <div>
-            {job.job_min_salary ? (
-              <p>Minimum Pay (per month): {job.job_min_salary}</p>
-            ) : (
-              <p>Minimum Pay (per month): Not Mentioned</p>
-            )}
+          <div className="rounded-2xl p-6">
+            <SalaryCard
+              salaries={salaryDataJson()}
+              jobTitle={salaryTitle()}
+              role={selectedSalaryCategory}
+            />
           </div>
-          <div>
-            {job.job_max_salary ? (
-              <p>Maximum Pay (per month): {job.job_max_salary}</p>
-            ) : (
-              <p>Maximum Pay (per month): Not Mentioned</p>
-            )}
-          </div>
-        </li>
-      ))}
+        </section>
+      </div>
     </>
   );
 }
