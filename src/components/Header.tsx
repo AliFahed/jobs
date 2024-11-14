@@ -85,6 +85,7 @@ export const Header = ({ option }: any) => {
             </button>
           </div>
           <div
+            data-testid="mobile-menu"
             className={`${
               isMenuOpen ? "flex" : "hidden"
             } flex-col lg:flex lg:flex-row lg:space-x-8 mt-4 lg:mt-0 font-medium lg:items-center w-full lg:w-auto lg:order-1`}
