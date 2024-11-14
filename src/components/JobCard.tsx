@@ -26,6 +26,7 @@ export const JobCard = ({ jobs, jobTitle, role }: any) => {
                     width={50}
                     height={50}
                     className="w-20 h-20 object-contain rounded-xl border border-gray-300  contrast-100 brightness-110"
+                    role="img"
                   />
 
                   <div>
