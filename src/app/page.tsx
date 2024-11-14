@@ -68,7 +68,7 @@ export default function Home() {
   return (
     <>
       <div className="container px-4 pt-16 mx-auto max-w-7xl">
-        <section className="jobs-section mt-10">
+        <section id="jobs-section-id" className="mt-10">
           <h1 className="text-4xl font-bold text-center mb-2">Web Dev Jobs</h1>
           <p className="text-gray-600 text-center mb-8">
             Find and Apply to Web Dev Jobs in Malaysia
@@ -86,6 +86,7 @@ export default function Home() {
                         : "text-gray-600 hover:bg-gray-300"
                     }`}
                     onClick={() => dispatch(setJobCategory(category))}
+                    id="jobs-category-buttons"
                   >
                     {category}
                   </button>
@@ -121,6 +122,7 @@ export default function Home() {
                         : "text-gray-600 hover:bg-gray-300"
                     }`}
                     onClick={() => dispatch(setSalaryCategory(category))}
+                    id="salary-category-buttons"
                   >
                     {category}
                   </button>
