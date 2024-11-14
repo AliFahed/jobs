@@ -41,7 +41,7 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
-.github/workflows/playwright.yml
+
 
 # actions
 #.github
