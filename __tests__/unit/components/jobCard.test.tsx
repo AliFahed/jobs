@@ -32,7 +32,7 @@ describe("JobCard Component", () => {
       expect(
         screen.getByText(`${job.job_city}, ${job.job_country}`)
       ).toBeInTheDocument();
-      expect(screen.getByText(job.job_employment_type)).toBeInTheDocument();
+      expect(screen.getAllByText(job.job_employment_type)).toHaveLength(2);
       expect(
         screen.getByText(
           `Uploaded on: ${new Date(
