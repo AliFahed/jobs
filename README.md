@@ -29,9 +29,11 @@ Visist the website: [Web Jobs](https://jobs-tau-swart.vercel.app/)
 ### 2. APIs Data are not consistent, and needed further adjustments
 
 - To solve this issue and use the data in the website, I used React conditional rendering to adjust based on the received data.
+
   Non consistency Examples:
   1. Company logo might be null
   2. Salary, education, skills, and other data for job details might not be mentioned
+  
   Further Adjustments Examples:
   1. The Job description which is the most Important data in the jobs details are compacted without lines and its un-readable. Used custom function to format the layout of the texts.
   2. Salaries data contains arabic and japanese texts for saudia arabia and japan countries, I auto update it to be able to insert it to the url and to be consistent with other countries format.
