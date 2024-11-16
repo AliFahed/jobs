@@ -41,8 +41,8 @@ export const SalaryCard = ({ salaries, jobTitle, role }: any) => {
 
                 <p>Currency: {item.data.currency}</p>
                 <p>
-                  <span className="">Yearly Salary (median):</span>
-                  {item.data.currency}
+                  <span className="">Yearly Salary (median): </span>
+                  {item.data.currency}{" "}
                   {item.data.yearlySalary.median.toLocaleString(undefined, {
                     maximumFractionDigits: 0,
                   })}
