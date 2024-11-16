@@ -105,7 +105,7 @@ export const SalaryDetails = () => {
         </div>
 
         <div>
-          <h1 className="text-2xl font-semibold mb-4 text-center">
+          <h1 className="text-xl md:text-2xl font-semibold mb-4 text-center">
             {firstLetterToUpperCase(selectedCategory)} development Salary in{" "}
             {salary?.data.countryCode === "SA"
               ? "Saudi Arabia"

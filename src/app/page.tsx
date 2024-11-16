@@ -69,20 +69,22 @@ export default function Home() {
     <>
       <div className="container px-4 pt-16 mx-auto max-w-7xl">
         <section id="jobs-section-id" className="mt-10">
-          <h1 className="text-4xl font-bold text-center mb-2">Web Dev Jobs</h1>
+          <h1 className="text-2xl md:text-4xl font-bold text-center mb-2">
+            Web Dev Jobs
+          </h1>
           <p className="text-gray-600 text-center mb-8">
             Find and Apply to Web Dev Jobs in Malaysia
           </p>
 
           <div className="flex justify-center mb-2">
-            <div className="inline-flex rounded-lg border border-gray-200 bg-white p-1">
-              <div className="text-center">
+            <div className="w-full sm:w-fit inline-flex rounded-lg border border-gray-200 bg-white p-1">
+              <div className="flex flex-col sm:flex-row w-full text-center">
                 {categories.map((category) => (
                   <button
                     key={category}
                     className={`px-4 py-2 m-2 rounded transition-colors duration-200 ${
                       selectedJobCategory === category
-                        ? "bg-gray-800  text-white "
+                        ? "bg-gray-800  text-white"
                         : "text-gray-600 hover:bg-gray-300"
                     }`}
                     onClick={() => dispatch(setJobCategory(category))}
@@ -102,7 +104,7 @@ export default function Home() {
         </section>
 
         <section id="salary-section" className="pt-14">
-          <h1 className="text-4xl font-bold text-center mb-2">
+          <h1 className="text-2xl md:text-4xl font-bold text-center mb-2">
             Developer Salary Guide
           </h1>
           <p className="text-gray-600 text-center mb-8">
@@ -111,14 +113,14 @@ export default function Home() {
           </p>
 
           <div className="flex justify-center mb-2">
-            <div className="inline-flex rounded-lg border border-gray-200 bg-white p-1">
-              <div className="text-center">
+            <div className="w-full sm:w-fit inline-flex rounded-lg border border-gray-200 bg-white p-1">
+              <div className="flex flex-col sm:flex-row w-full text-center">
                 {categories.map((category) => (
                   <button
                     key={category}
                     className={`px-4 py-2 m-2 rounded transition-colors duration-200 ${
                       selectedSalaryCategory === category
-                        ? "bg-gray-800  text-white "
+                        ? "bg-gray-800  text-white"
                         : "text-gray-600 hover:bg-gray-300"
                     }`}
                     onClick={() => dispatch(setSalaryCategory(category))}

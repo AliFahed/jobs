@@ -73,17 +73,24 @@ export const JobDetails = () => {
           <div className="lg:col-span-2">
             <div className="border rounded-xl p-7">
               <div className="mb-6">
-                <div className="flex items-start gap-6">
-                  <Image
-                    src={job.employer_logo ? job.employer_logo : NoLogo}
-                    alt="Company Logo"
-                    width={50}
-                    height={50}
-                    className="w-20 h-20 object-contain rounded-xl border border-gray-300  contrast-100 brightness-110"
-                  />
+                <div className="flex flex-col md:flex-row items-start gap-6">
+                  <div className="flex items-center justify-between w-full md:w-fit">
+                    <Image
+                      src={job.employer_logo ? job.employer_logo : NoLogo}
+                      alt="Company Logo"
+                      width={50}
+                      height={50}
+                      className="w-20 h-20 object-contain rounded-xl border border-gray-300  contrast-100 brightness-110"
+                    />
+                    <div className="md:hidden text-sm font-bold border border-gray-400 opacity-75 outline-1 rounded-full text-center w-fit px-2 h-fit">
+                      {job.job_employment_type}
+                    </div>
+                  </div>
                   <div className="flex justify-between w-full">
                     <div className="flex flex-col gap-1">
-                      <h1 className="text-2xl font-bold">{job.job_title}</h1>
+                      <h1 className="text-xl md:text-2xl font-bold">
+                        {job.job_title}
+                      </h1>
                       <div className="flex flex-wrap gap-4">
                         <div className="flex items-center gap-2">
                           <Building2 className="w-4 h-4" />
@@ -138,7 +145,7 @@ export const JobDetails = () => {
                     </div>
 
                     <div>
-                      <div className="text-sm font-bold border border-gray-400 opacity-75 outline-1 rounded-full text-center w-fit px-2 h-fit">
+                      <div className="hidden md:block text-sm font-bold border border-gray-400 opacity-75 outline-1 rounded-full text-center w-fit px-2 h-fit">
                         {job.job_employment_type}
                       </div>
                     </div>
