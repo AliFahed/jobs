@@ -1,4 +1,0 @@
-- add jest
-- add playwright
-- add jwt auth
-- add filtering
